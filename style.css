@@ -2,12 +2,13 @@ body {background-color:black;font-family:arial;color:white}
 
 
 .maindiv {
-    background-color: aliceblue;
-    color: black;
-    width: 300px;
-    padding: 30px;
-    border-radius: 25px;
-    float: center;
+    background-color: #f4f4f4;
+    color: #555;
+    width: 50%;
+    padding: 20px 20px ;
+    border-radius: 20px;
+    margin:auto;
+    margin-top: 50px;
 }
 
 .maindiv h1{
@@ -16,6 +17,42 @@ body {background-color:black;font-family:arial;color:white}
     margin-top: 0%;
 }
 
+#input_block{
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+
 .maindiv label{
-    color:darkslategrey
+    display: block;
+    color:darkslategrey;
+    padding: 2px;
+}
+
+#button_block{
+    padding-left: 5%;
+    padding-top: 10px;
+}
+
+.maindiv button{
+background-color: #555;
+color: aliceblue;
+font-family: 'Arial';
+font-size: 16px;
+padding:10px;
+border:none;
+}
+
+.maindiv button:hover{
+    background-color: #444;
+    color: aquamarine;
+}
+
+#result_block{
+    margin-top: 10px;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #444;
+    color: #f4f4f4;
+    font-size: 14px;
 }

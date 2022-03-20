@@ -6,16 +6,30 @@
     </head>
     <body>
         <div class="maindiv">
-        <h1>Simple Interest Calculator by JP</h1>
-        <label for="principal">Amount</label>
-        <input type="number"  id="principal" >  <br/>
-        <label for="rate">Rate</label>
-        <input type="range" id="rate" min=1 max=20 step=0.25 value=10.25 onchange="updateRate()" >
-        <span id="rate_val">10.25%</span> <br>
-        <label for="principal">Amount</label>
-        No. of Years <input type="number"  id="years" min=1 max=10 value=5> <br/>
-        <button onclick="compute()">Compute Interest</button><br>
-        <span id="result"> </span>
+            <h1>Simple Interest Calculator by JP</h1>
+
+            <div id="input_block">
+            <label for="principal">Amount</label>
+            <input type="number"  id="principal" onclick="clear_result()">
+            </div>
+
+            <div id="input_block">
+            <label for="rate">Rate <span id="rate_val">10.25%</span></label>
+            <input type="range" id="rate" min=1 max=20 step=0.25 value=10.25 onchange="updateRate()" >
+            </div>
+    
+            <div id="input_block">
+            <label for="years">Years</label>
+            <input type="number"  id="years" min=1 max=10 value=5>
+            </div>
+
+            <div id="button_block">
+            <button onclick="compute()">Compute Interest</button>
+            </div>
+
+            <div id="result_block">
+            <span id="result"> </span>
+            </div>
 
     </div>
 
